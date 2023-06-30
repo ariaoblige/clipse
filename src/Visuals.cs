@@ -11,6 +11,14 @@ namespace Clipse {
         Console.ResetColor();
       }
     }
+
+
+    public static void ChangeColorLine(string write, ConsoleColor fg=ConsoleColor.Gray, ConsoleColor bg=ConsoleColor.Black) {
+      Console.ForegroundColor = fg;
+      Console.BackgroundColor = bg;
+      Console.Write(write);
+      Console.ResetColor();
+    }
   }
 }
 
